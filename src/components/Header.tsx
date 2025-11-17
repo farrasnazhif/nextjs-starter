@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { Sun, Moon } from "lucide-react";
 import Cookie from "js-cookie";
+import Link from "next/link";
 
 export default function Header({ initialTheme }: { initialTheme: string }) {
   const [theme, setTheme] = React.useState(initialTheme);
@@ -33,7 +34,10 @@ export default function Header({ initialTheme }: { initialTheme: string }) {
 
   return (
     <header className="w-full flex items-center justify-between px-6 py-4 border-b-1 border-[var(--text-color)] ">
-      <h1 className="text-2xl font-bold ">{WEB_NAME}</h1>
+      <Link href="/" className="text-2xl font-bold ">
+        {WEB_NAME}
+      </Link>
+
       <button onClick={handleToggleTheme} className="px-4 py-2 border rounded ">
         {theme === "light" ? <Moon /> : <Sun />}
       </button>
