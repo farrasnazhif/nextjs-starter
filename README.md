@@ -15,7 +15,6 @@
 - 🔹 Lucide Icons
 - 🌑 Dark mode - With customable cookies
 - 📝 Commitlint
-- 🤖 Github actions
 - ⚙️ T3-env
 - 🗺️ Sitemap & robots.txt
 - 💾 Neon database
