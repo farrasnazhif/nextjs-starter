@@ -1,0 +1,38 @@
+name: Lint Code
+
+# Trigger this workflow on push or pull request to main branch
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Install Node.js (matching your version)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      # 3. Install dependencies with pnpm
+      - name: Install dependencies
+        run: pnpm install
+
+      # 4. Run ESLint
+      - name: Run ESLint
+        run: pnpm exec eslint . --ext .ts,.tsx,.js,.jsx
+
+      # Optional: Run Prettier check
+      - name: Check Prettier formatting
+        run: pnpm exec prettier --check .
