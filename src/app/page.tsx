@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/Button";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="relative py-68 flex items-center justify-center">
@@ -6,6 +9,11 @@ export default function Home() {
           NextJs Starter
         </h1>
         <p className="">by Farras Nazhif</p>
+        <Link href="/sandbox">
+          <Button variant="soft" className="border border-[var(--text-color)]">
+            Sandbox
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export default function Header({ initialTheme }: { initialTheme: string }) {
   }
 
   return (
-    <header className="w-full flex items-center justify-between px-6 py-4 shadow ">
+    <header className="w-full flex items-center justify-between px-6 py-4 border-b-1 border-[var(--text-color)] ">
       <h1 className="text-2xl font-bold ">{WEB_NAME}</h1>
       <button onClick={handleToggleTheme} className="px-4 py-2 border rounded ">
         {theme === "light" ? <Moon /> : <Sun />}
