@@ -6,7 +6,7 @@ import {
   DARK_TOKENS,
   LIGHT_TOKENS,
 } from "@/constants";
-import Header from "./components/Header";
+import Header from "../components/Header";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
