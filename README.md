@@ -9,8 +9,6 @@
 - 🔒 Next-auth
 - 🛡️ Prisma
 - 🔍 Zod
-- 🧪 Jest & React Testing Library
-- 🎭 Playwright
 - 💅 Prettier
 - 🧹 Eslint
 - 🐶 Husky & Lint Staged
@@ -20,6 +18,4 @@
 - 🤖 Github actions
 - ⚙️ T3-env
 - 🗺️ Sitemap & robots.txt
-- 💯 Perfect Lighthouse score
 - 💾 Neon database
-- 🌐 I18n with next-intl
