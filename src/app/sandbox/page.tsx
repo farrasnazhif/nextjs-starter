@@ -23,7 +23,6 @@ export default function Sandbox() {
             </Link>
           </li>
         </ul>
-        <p>tes</p>
         <h3 className="text-md ">
           You can explore and add more components in{" "}
           <Link
